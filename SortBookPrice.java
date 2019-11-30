@@ -55,7 +55,7 @@ class Book
 class priceSorter implements Comparator<Book> {
     @Override
     public int compare(Book b1, Book b2) {
-        double d = b2.price - b1.price;
+        double d = b1.price - b2.price;
         if (d>0) return 1;
         if (d<0) return -1;
         return 0;
