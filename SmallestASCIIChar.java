@@ -1,11 +1,16 @@
+import java.io.*;
 import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-class Smallest
-{
-    public static void main(String[] args) 
-    {
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        
         Scanner sc=new Scanner(System.in);
         String st = sc.nextLine();
-        System.out.printf("Smallest ASCII-value is: '%c'", st.chars().min().getAsInt());
+        char c =(char)st.chars().min().getAsInt();
+        System.out.println(c);
+    
     }
 }
